@@ -1,5 +1,5 @@
-const cacheName = 'kwast-pilot-v1';
-const shell = ['index.html','app.css','app.js','map.js','install.js','app.webmanifest','icon-192.png','icon-512.png'];
+const cacheName = 'kwast-pilot-v2';
+const shell = ['index.html','app.css','app.js','map.js','config.js','install.js','app.webmanifest','icon-192.png','icon-512.png'];
 self.addEventListener('install', event => {
     event.waitUntil(caches.open(cacheName).then(cache => cache.addAll(shell)).then(() => self.skipWaiting()));
 });

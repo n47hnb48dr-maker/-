@@ -2,3 +2,10 @@
 @media(max-width:1050px){aside{width:175px}.word{margin-left:6px}.navtitle{font-size:9px;letter-spacing:1px}main{margin-left:175px}.board{grid-template-columns:minmax(0,1fr) minmax(270px,.9fr)}.body{padding-left:18px;padding-right:18px}}
 @media(max-width:800px){aside{display:none}main{margin:0}.mobileNav{display:flex;background:#27293b;color:white;position:fixed;bottom:0;left:0;right:0;padding:4px 2px max(4px,env(safe-area-inset-bottom));z-index:4;justify-content:space-around}.mobileNav .navbtn{margin:0;display:flex;flex-direction:column;align-items:center;gap:3px;width:30%;padding:6px 2px;font-size:11px}.mobileNav .navbtn.active{background:transparent;color:#c3f777}.wide{display:none}.mobileword{display:inline-block;font-size:23px;letter-spacing:-1.4px;font-weight:850;color:#2a293a}.body{padding-bottom:85px}header{height:56px}.mapbox{height:375px}#toast{bottom:78px}}
 @media(max-width:640px){.body{padding:22px 14px 86px}.page-title{align-items:start;flex-wrap:wrap}.page-title p{font-size:14px}.publish{padding:8px 11px;font-size:13px}.stats{gap:6px;margin-bottom:13px}.stat{padding:9px;gap:3px;align-items:start;flex-direction:column;border-radius:10px}.statIcon{display:none}.stat strong{font-size:21px}.stat small{font-size:12px}.board{display:block}.mapbox{height:365px}.panel{border-radius:13px}.listPanel{margin-top:12px}.mobileTabs{display:flex;gap:6px;margin-bottom:10px}.mode-list .mapPanel,.mode-map .listPanel{display:none}.page-title{margin-bottom:15px}.account{font-size:12px}.account .accountName{max-width:99px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.crumb{gap:6px;font-size:12px}.cols{grid-template-columns:1fr 1fr}.sideFoot{display:none}}
+.pill.cancelled{background:#f8e7e4;color:#8a3d31}
+body.gate nav,body.gate .mobileNav,body.gate .publish,body.gate #account{display:none}
+.gatePanel{max-width:520px;padding:20px}
+.gatePanel .filter{margin-bottom:14px}
+.gateDemo{margin-top:18px;padding-top:16px;border-top:1px solid #e6e6ee;display:grid;gap:8px;justify-items:start}
+.sideFoot i.off{background:#e0816f}
+body.offline #sub{color:#8a3d31}

@@ -12,6 +12,9 @@ struct Marketplace: UIViewRepresentable {
     func makeUIView(context: Context) -> WKWebView {
         let browser = WKWebView()
         browser.scrollView.contentInsetAdjustmentBehavior = .never
+        #if DEBUG
+        if #available(iOS 16.4, *) { browser.isInspectable = true }
+        #endif
         if let entry = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist") {
             browser.loadFileURL(entry, allowingReadAccessTo: entry.deletingLastPathComponent())
         }

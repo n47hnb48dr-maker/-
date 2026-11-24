@@ -1,0 +1,12 @@
+{
+  "name": "kwast-server",
+  "private": true,
+  "description": "Сервер пилота Kwast: аккаунты компаний, объекты, отклики и брони в общей базе SQLite.",
+  "type": "module",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --no-warnings server.mjs",
+    "test": "node --no-warnings --test test/server.test.mjs",
+    "e2e": "node --no-warnings test/e2e-two-phones.mjs"
+  }
+}
